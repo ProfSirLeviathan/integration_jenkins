@@ -139,12 +139,10 @@ def getRequest(URL url, String requestedFor) {
 
 pipeline {
     agent any
-
-    triggers {
+    triggers {
         githubPush()
     }
-
-    stages {
+    stages {
         stage('Checkout Code') {
             steps {
                 checkout scm
