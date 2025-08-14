@@ -138,7 +138,7 @@ def getRequest(URL url, String requestedFor) {
 }
 
 pipeline {
-    agent any
+    agent any
 
     triggers {
         githubPush()
