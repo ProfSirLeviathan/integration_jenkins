@@ -1,5 +1,11 @@
 // Jenkinsfile
 import groovy.json.JsonSlurper
+import java.net.URL
+import java.net.HttpURLConnection
+import groovy.json.JsonSlurper
+import java.net.URLEncoder
+import java.util.NoSuchElementException
+
 pipeline {
   
     agent any
