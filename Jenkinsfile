@@ -1,5 +1,5 @@
 // Jenkinsfile
-
+import groovy.json.JsonSlurper
 pipeline {
   
     agent any
@@ -21,7 +21,7 @@ pipeline {
                 
                 script {
                    
-                    import groovy.json.JsonSlurper
+                 
 
                     // The withCredentials block is now inside the 'script' block
                     withCredentials([
